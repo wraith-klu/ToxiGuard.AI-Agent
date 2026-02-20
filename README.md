@@ -7,14 +7,14 @@
 ## 🌐 Live Demo
 
 **Frontend (Vercel)**  
-👉 https://toxiai.vercel.app
+👉 [https://toxiai.vercel.app](https://toxiai.vercel.app)
 
 **Backend API (Render)**  
-👉 https://toxiguard-ai-agent-1.onrender.com/  
-👉 API Docs: https://toxiguard-ai-agent-1.onrender.com/docs
+👉 [https://toxiguard-ai-agent-1.onrender.com/](https://toxiguard-ai-agent-1.onrender.com/)  
+👉 API Docs: [https://toxiguard-ai-agent-1.onrender.com/docs](https://toxiguard-ai-agent-1.onrender.com/docs)
 
 **GitHub Repository**  
-👉 https://github.com/wraith-klu/ToxiGuard-AI
+👉 [https://github.com/wraith-klu/ToxiGuard-AI](https://github.com/wraith-klu/ToxiGuard-AI)
 
 
 ## 🧠 Tech Stack
