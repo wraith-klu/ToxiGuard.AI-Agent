@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ToxiGuard AI</title>
+
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+  <h2>ToxiGuard AI</h2>
+
+  <!-- ================= LOGIN ================= -->
+
+  <div id="login-section">
+
+    <input
+      id="email"
+      type="email"
+      placeholder="Email"
+      autocomplete="username"
+    >
+
+    <input
+      id="password"
+      type="password"
+      placeholder="Password"
+      autocomplete="current-password"
+    >
+
+    <button id="loginBtn">Login</button>
+
+    <p id="status" class="status"></p>
+
+  </div>
+
+  <!-- ================= CONTROL PANEL ================= -->
+
+  <div id="control-section" style="display:none">
+
+    <p class="success">✅ Logged in</p>
+
+    <label class="toggle-label">
+      <input type="checkbox" id="toggle">
+      Enable Moderation
+    </label>
+
+    <button id="logoutBtn" class="logout">Logout</button>
+
+  </div>
+
+  <script src="popup.js"></script>
+
+</body>
+</html>

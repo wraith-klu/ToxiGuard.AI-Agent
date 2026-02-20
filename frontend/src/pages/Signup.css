@@ -1,0 +1,94 @@
+/* ===== PAGE BACKGROUND ===== */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: radial-gradient(
+      circle at 50% -20%,
+      #0d2a6b 0%,
+      #030b1f 45%
+    ),
+    #030b1f;
+
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #eaf2ff;
+}
+
+/* ===== CARD STYLE (applied to page container itself) ===== */
+.auth-page > * {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Title */
+.auth-page h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 2rem;
+  color: #5ecbff;
+  font-weight: 800;
+}
+
+/* ===== INPUTS ===== */
+.auth-page input {
+  width: 100%;
+  margin-bottom: 16px;
+
+  padding: 14px 16px;
+  border-radius: 10px;
+
+  border: 1px solid #223666;
+
+  background: #030b1f;
+  color: #ffffff;
+
+  font-size: 0.95rem;
+}
+
+/* Placeholder */
+.auth-page input::placeholder {
+  color: #7f94c4;
+}
+
+/* Focus glow */
+.auth-page input:focus {
+  outline: none;
+  border-color: #5ecbff;
+  box-shadow: 0 0 0 2px rgba(94, 203, 255, 0.25);
+}
+
+/* ===== BUTTON ===== */
+.auth-page button {
+  width: 100%;
+  margin-top: 10px;
+
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+
+  background: linear-gradient(135deg, #6ad0ff, #3aa8ff);
+  color: #02122e;
+
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+/* Hover */
+.auth-page button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(62, 170, 255, 0.6);
+}
+
+/* Disabled state */
+.auth-page button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+

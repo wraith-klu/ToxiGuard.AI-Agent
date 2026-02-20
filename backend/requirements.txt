@@ -1,0 +1,39 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+scikit-learn==1.5.1
+joblib==1.4.2
+
+nltk==3.9.1
+textblob==0.18.0.post0
+vaderSentiment==3.3.2
+
+openai==1.51.0
+python-dotenv==1.0.1
+
+sqlalchemy==2.0.32
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-jose[cryptography]==3.3.0
+httpx==0.27.2
+
+
+
+
+
+
+
+
+
+
+
+
+# fastapi
+# uvicorn
+# scikit-learn
+# joblib
+# nltk
+# textblob
+# openai
+# python-dotenv
+# vaderSentiment

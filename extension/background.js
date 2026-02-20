@@ -1,0 +1,1 @@
+console.log("ToxiGuard AI Extension Running");

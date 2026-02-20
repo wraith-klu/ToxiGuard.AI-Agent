@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "ToxiGuard AI",
+  "version": "1.0.0",
+  "description": "AI-powered toxic comment moderation for Instagram",
+
+  "permissions": ["storage", "activeTab", "scripting"],
+
+  "host_permissions": [
+    "https://www.instagram.com/*",
+    "http://127.0.0.1:8090/*",
+    "http://localhost:8090/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

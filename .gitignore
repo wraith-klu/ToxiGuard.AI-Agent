@@ -1,0 +1,121 @@
+# =========================================================
+# 🔐 ENV & SECRETS (NEVER COMMIT)
+# =========================================================
+
+.env
+.env.*
+!.env.example
+
+# =========================================================
+# 🐍 PYTHON (BACKEND)
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.venv/
+ENV/
+env/
+
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs & databases
+*.log
+*.sqlite3
+*.db
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================================================
+# 🤖 ML ARTIFACTS (OPTIONAL — uncomment if needed)
+# =========================================================
+
+# Large model files (usually don't commit)
+# backend/models/
+# backend/data/
+# *.joblib
+# *.pkl
+# *.h5
+
+# =========================================================
+# ⚛️ FRONTEND (NODE / VITE / REACT)
+# =========================================================
+
+node_modules/
+dist/
+.vite/
+.cache/
+
+# Package managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Frontend env files
+frontend/.env
+frontend/.env.*
+
+# =========================================================
+# 🌐 CHROME EXTENSION BUILD FILES
+# =========================================================
+
+# Ignore packaged extension zips
+*.zip
+*.crx
+
+# Keep source extension folder tracked
+!extension/
+
+# =========================================================
+# 📦 DEPLOYMENT / CLOUD
+# =========================================================
+
+.vercel/
+.render/
+*.pid
+
+# =========================================================
+# 🧠 IDE / EDITORS
+# =========================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# =========================================================
+# 💻 OS FILES
+# =========================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================================================
+# 🧹 TEMP / BACKUP FILES
+# =========================================================
+
+*.tmp
+*.bak
+*.old
+*.orig
+
+# =========================================================
+# 🔒 MISC
+# =========================================================
+
+coverage/
+*.coverage

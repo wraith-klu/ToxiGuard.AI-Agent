@@ -1,0 +1,98 @@
+/* ---------- Base ---------- */
+
+body {
+  font-family: Arial, sans-serif;
+  width: 280px;
+  padding: 16px;
+  background: #0b1220;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* ---------- Title ---------- */
+
+h2 {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* ---------- Inputs ---------- */
+
+input {
+  width: 100%;
+  margin: 6px 0;
+  padding: 9px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1a2238;
+  color: white;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #9aa4c7;
+}
+
+input:focus {
+  background: #212b45;
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #4da3ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.05s ease, background 0.2s;
+}
+
+button:hover {
+  background: #3b8be0;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ---------- Logout Button ---------- */
+
+.logout {
+  background: #ff5a5a;
+}
+
+.logout:hover {
+  background: #e04747;
+}
+
+/* ---------- Toggle ---------- */
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* ---------- Status Text ---------- */
+
+.status {
+  margin-top: 6px;
+  font-size: 12px;
+  text-align: center;
+  color: #ff8b8b;
+}
+
+.success {
+  text-align: center;
+  color: #6cff8a;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
