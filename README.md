@@ -60,7 +60,7 @@
 * ✅ Premium glassmorphism design
 * ✅ Responsive layout
 * ✅ Modern analytics interface
-
+```
 
 ## 📁 Project Structure
 
@@ -110,9 +110,9 @@ ToxiGuard-AI/
 │   └── popup.css
 │
 └── README.md
-````
+```
 
-
+```
 ## 🧩 Backend Setup (Local)
 
 ### 1️⃣ Create virtual environment
