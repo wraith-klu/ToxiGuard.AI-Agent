@@ -7,7 +7,7 @@ export default function Home() {
 
             {/* HERO SECTION */}
             <section className="hero">
-                <h1>ToxiGuard AI</h1>
+                <h1>🛡️ ToxiGuard AI</h1>
 
                 <p>
                     Protect your social media presence with AI-powered moderation.
