@@ -1,18 +1,20 @@
+```markdown
 # 🛡️ ToxiGuard AI
 
-**ToxiGuard AI** is a **real-time toxic content detection platform** that combines **Machine Learning + LLM intelligence + modern analytics UI** to detect abusive language, estimate toxicity, explain predictions, and visualize insights in real time.
+**ToxiGuard AI** is an **AI-powered social media moderation platform** that detects, analyzes, and removes toxic comments in real time. It combines **Machine Learning models, LLM explainability, and a Chrome extension** to protect creators, brands, and online communities from harmful content.
 
 
 ## 🌐 Live Demo
 
-**Frontend (Vercel)**
-👉 [https://toxiguard-ai.vercel.app](https://toxiguard-ai.vercel.app)
+**Frontend (Vercel)**  
+👉 https://toxiai.vercel.app
 
-**Backend API (Render)**
-👉 [https://toxiguard-ai-backend.onrender.com/docs](https://toxiguard-ai-backend.onrender.com/docs)
+**Backend API (Render)**  
+👉 https://toxiguard-ai-agent-1.onrender.com/  
+👉 API Docs: https://toxiguard-ai-agent-1.onrender.com/docs
 
-**GitHub Repository**
-👉 [https://github.com/wraith-klu/ToxiGuard-AI](https://github.com/wraith-klu/ToxiGuard-AI)
+**GitHub Repository**  
+👉 https://github.com/wraith-klu/ToxiGuard-AI
 
 
 ## 🧠 Tech Stack
@@ -21,31 +23,56 @@
 * 🚀 **FastAPI** — High-performance backend API
 * 🧠 **Machine Learning** — TF-IDF + Logistic Regression
 * 🤖 **LLM (OpenRouter)** — Context-aware moderation fallback
+* 🧩 **Chrome Extension** — Real-time social media protection
 * 📊 **Analytics** — KPI dashboard, charts, word clouds
+* 🗄️ **SQLite Database** — User authentication & history
 
 
 ## ✨ Key Features
 
-* ✅ Real-time toxic word detection
-* ✅ ML-based classification (97%+ accuracy)
-* ✅ LLM fallback for ambiguous content
-* ✅ Highlight abusive words
+### 🔎 AI Moderation Engine
+* ✅ Real-time toxic content detection
+* ✅ ML-based classification (high accuracy)
+* ✅ LLM fallback for nuanced cases
+* ✅ Abusive keyword highlighting
+* ✅ Toxicity severity estimation
+* ✅ Confidence scoring
+
+### 📊 Analytics & Insights
 * ✅ KPI dashboard (word count, abusive count, toxicity)
 * ✅ Toxicity confidence bar
 * ✅ Pie chart distribution
 * ✅ Abuse table with CSV export
 * ✅ Word cloud visualization
 * ✅ Analysis history tracking
-* ✅ Premium glassmorphism UI
+
+### 🔐 User System
+* ✅ Secure signup & login
+* ✅ Personal moderation dashboard
+* ✅ Persistent analysis history
+
+### 🧩 Browser Protection
+* ✅ Chrome extension for real-time moderation
+* ✅ Works on social platforms
+* ✅ Protects creators and communities
+
+### 🎨 UI/UX
+* ✅ Premium glassmorphism design
+* ✅ Responsive layout
+* ✅ Modern analytics interface
 
 
 ## 📁 Project Structure
 
 ```
+
 ToxiGuard-AI/
 │
 ├── backend/
 │   ├── app.py
+│   ├── database.py
+│   ├── auth_utils.py
+│   ├── models.py
 │   ├── train_model.py
 │   ├── requirements.txt
 │   ├── abuse_model.joblib
@@ -75,8 +102,17 @@ ToxiGuard-AI/
 │           ├── History.jsx
 │           └── WordClouds.jsx
 │
+├── extension/
+│   ├── manifest.json
+│   ├── content.js
+│   ├── background.js
+│   ├── popup.html
+│   ├── popup.js
+│   └── popup.css
+│
 └── README.md
-```
+
+````
 
 
 ## 🧩 Backend Setup (Local)
@@ -87,8 +123,7 @@ ToxiGuard-AI/
 cd backend
 python -m venv venv
 venv\Scripts\activate
-```
-
+````
 
 ### 2️⃣ Install dependencies
 
@@ -96,11 +131,9 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-
-
 ### 3️⃣ Environment variables
 
-Create file:
+Create:
 
 ```
 backend/.env
@@ -110,9 +143,8 @@ Add:
 
 ```env
 OPENROUTER_API_KEY=your_api_key_here
-OPENROUTER_MODEL=xiaomi/mimo-v2-flash:free
+OPENROUTER_MODEL=arcee-ai/trinity-large-preview:free
 ```
-
 
 ### 4️⃣ Train ML model (run once)
 
@@ -120,13 +152,12 @@ OPENROUTER_MODEL=xiaomi/mimo-v2-flash:free
 python train_model.py
 ```
 
-This generates:
+Generates:
 
 ```
 abuse_model.joblib
 label_encoder.joblib
 ```
-
 
 ### 5️⃣ Run backend
 
@@ -134,13 +165,13 @@ label_encoder.joblib
 uvicorn app:app --host 0.0.0.0 --port 8090 --reload
 ```
 
-Backend URL:
+Backend:
 
 ```
 http://127.0.0.1:8090
 ```
 
-Swagger Docs:
+Docs:
 
 ```
 http://127.0.0.1:8090/docs
@@ -155,10 +186,9 @@ cd frontend
 npm install
 ```
 
-
 ### 2️⃣ Environment variable
 
-Create file:
+Create:
 
 ```
 frontend/.env
@@ -170,19 +200,17 @@ Add:
 VITE_BACKEND_URL=http://127.0.0.1:8090
 ```
 
-
 ### 3️⃣ Run frontend
 
 ```bash
 npm run dev
 ```
 
-Open browser:
+Open:
 
 ```
 http://localhost:5173
 ```
-
 
 ## 🔗 API Usage
 
@@ -192,8 +220,6 @@ http://localhost:5173
 POST /predict
 ```
 
-
-
 ### Request
 
 ```json
@@ -201,7 +227,6 @@ POST /predict
   "text": "you are stupid"
 }
 ```
-
 
 ### Response
 
@@ -221,7 +246,6 @@ POST /predict
 }
 ```
 
-
 ## ⚠️ Common Issues & Fixes
 
 ### ❌ Backend not opening
@@ -236,7 +260,6 @@ Verify:
 http://127.0.0.1:8090/docs
 ```
 
-
 ### ❌ Node dependency conflicts
 
 ```bash
@@ -245,12 +268,11 @@ npm install
 npm run dev
 ```
 
-Recommended Node version:
+Recommended:
 
 ```
 Node 18 LTS
 ```
-
 
 ### ❌ ML model not loading
 
@@ -258,11 +280,9 @@ Node 18 LTS
 python train_model.py
 ```
 
+### ❌ API not responding / CORS issues
 
-### ❌ CORS or API not responding
-
-Ensure backend is running before frontend and correct backend URL is configured.
-
+Ensure backend is running and frontend `.env` has correct URL.
 
 ## 📦 Production Build
 
@@ -270,20 +290,19 @@ Ensure backend is running before frontend and correct backend URL is configured.
 npm run build
 ```
 
-Output folder:
+Output:
 
 ```
 frontend/dist
 ```
 
-
 ## 👨‍💻 Author
 
 **Saurabh Yadav**
-
 
 ## 📜 License
 
 MIT License
 
----
+```
+```
