@@ -65,7 +65,6 @@
 ## 📁 Project Structure
 
 ```
-
 ToxiGuard-AI/
 │
 ├── backend/
@@ -111,7 +110,6 @@ ToxiGuard-AI/
 │   └── popup.css
 │
 └── README.md
-
 ````
 
 
