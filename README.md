@@ -1,4 +1,4 @@
-```markdown
+
 # 🛡️ ToxiGuard AI
 
 **ToxiGuard AI** is an **AI-powered social media moderation platform** that detects, analyzes, and removes toxic comments in real time. It combines **Machine Learning models, LLM explainability, and a Chrome extension** to protect creators, brands, and online communities from harmful content.
@@ -60,7 +60,7 @@
 * ✅ Premium glassmorphism design
 * ✅ Responsive layout
 * ✅ Modern analytics interface
-```
+
 
 ## 📁 Project Structure
 
