@@ -61,7 +61,7 @@ export default function LiveResult({ loading, result, inputText }) {
   if (!result) {
     return (
       <div className="glass result-card muted">
-        <p>Start typing to analyze text in real-time.</p>
+        <p>Start typing to analyze text in real-time...</p>
       </div>
     );
   }
@@ -92,7 +92,7 @@ export default function LiveResult({ loading, result, inputText }) {
       <div className="glass result-card">
         {/* Header */}
         <div className="result-header">
-          <h3>{toxic ? "⚠️ Toxic Content" : "✅ Safe Content"}</h3>
+          <h3>{toxic ? "⚠️ Negative Content" : "✅ Positive Content"}</h3>
           <SeverityBadge severity={severity} />
         </div>
 
@@ -123,7 +123,7 @@ export default function LiveResult({ loading, result, inputText }) {
 
           {/* ⭐ FIXED REASON BOX */}
           <div>
-            <b>Reason</b>
+            <b>Category</b>
             <div>{categoryLabel}</div>
           </div>
 
