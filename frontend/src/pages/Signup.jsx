@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 
-const API = "http://127.0.0.1:8090";
+const API = "https://toxiguard-ai-agent-1.onrender.com";
 
 export default function Signup() {
 
