@@ -5,7 +5,6 @@ import "./Signup.css";
 const API =
   import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8090";
 
-
 export default function Signup() {
 
   const [email, setEmail] = useState("");

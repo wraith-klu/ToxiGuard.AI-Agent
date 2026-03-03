@@ -1,124 +1,225 @@
-/* =========================
-   INSTALL EXTENSION PAGE
-   ========================= */
+/* ===============================
+   INSTALL EXTENSION – PREMIUM UI
+   =============================== */
 
 .install-page {
   min-height: 100vh;
+  padding: 60px 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 24px;
+  align-items: center;
 
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-
-  background: linear-gradient(
-    135deg,
-    #020617 0%,
-    #071a3a 40%,
-    #0b2a6f 100%
-  );
+  background:
+    radial-gradient(circle at 20% 0%, rgba(94,203,255,0.15), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(124,108,255,0.15), transparent 40%),
+    linear-gradient(180deg, #06122e 0%, #030b1f 100%);
 
   color: #eaf2ff;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
-/* ===== CARD ===== */
-.install-card {
+/* ===== MAIN CONTAINER ===== */
+.install-container {
   width: 100%;
-  max-width: 600px;
-  padding: 50px 42px;
+  max-width: 900px;
+  padding: 60px 50px;
 
-  border-radius: 22px;
-  background: #0b1736;
-  border: 1px solid #1e40af;
+  border-radius: 28px;
+  backdrop-filter: blur(20px);
+  background: rgba(15, 25, 55, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
   box-shadow:
-    0 30px 90px rgba(0, 0, 0, 0.9),
-    0 0 40px rgba(59, 130, 246, 0.35);
+    0 40px 120px rgba(0, 0, 0, 0.8),
+    0 0 60px rgba(94,203,255,0.15);
+}
 
+/* ===== HEADER ===== */
+.install-header {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-/* ===== TITLE ===== */
-.install-card h1 {
-  font-size: 2.4rem;
+.install-header h1 {
+  font-size: clamp(2.4rem, 4vw, 3rem);
   font-weight: 800;
-  color: #60a5fa;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+
+  background: linear-gradient(90deg, #ffffff, #5ecbff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* ===== SUBTITLE ===== */
 .subtitle {
+  max-width: 650px;
+  margin: 0 auto;
   color: #9fb3d9;
-  margin-bottom: 28px;
-  line-height: 1.5;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-/* ===== DOWNLOAD BUTTON ===== */
+/* ===== CTA ===== */
+.install-cta {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .download-btn {
   display: inline-block;
-  padding: 16px 28px;
+  padding: 16px 36px;
   border-radius: 999px;
 
-  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  background: linear-gradient(135deg, #6ad0ff, #3aa8ff);
   color: #02122e;
   font-weight: 700;
   text-decoration: none;
 
-  box-shadow: 0 12px 35px rgba(59,130,246,0.6);
-  transition: 0.25s;
+  box-shadow: 0 18px 50px rgba(62,170,255,0.5);
+  transition: all 0.3s ease;
 }
 
 .download-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 55px rgba(59,130,246,0.9);
+  transform: translateY(-4px);
+  box-shadow: 0 25px 65px rgba(62,170,255,0.7);
 }
 
-/* ===== STEPS ===== */
-.steps {
-  text-align: left;
-  margin-top: 36px;
+.secure-note {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #9fb3d9;
 }
 
-.steps h3 {
-  color: #7dd3fc;
-  margin-bottom: 12px;
+/* ===== STEPS CARD ===== */
+.steps-card,
+.usage-card {
+  margin-top: 50px;
+  padding: 40px 30px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
 }
 
-.steps ol {
-  padding-left: 20px;
+.steps-card h3,
+.usage-card h3 {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #5ecbff;
+}
+
+/* ===== GRID ===== */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* ===== STEP ITEM ===== */
+.step {
+  background: rgba(15, 25, 55, 0.6);
+  border-radius: 18px;
+  padding: 28px 22px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-6px);
+  border-color: rgba(94,203,255,0.4);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+}
+
+.step span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 38px;
+  height: 38px;
+  margin-bottom: 14px;
+
+  border-radius: 50%;
+  font-weight: 700;
+
+  background: linear-gradient(135deg, #6ad0ff, #7c6cff);
+  color: #02122e;
+}
+
+.step p {
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: #c7d2fe;
+}
+
+/* ===== USAGE NOTE ===== */
+.usage-note {
+  margin-top: 30px;
+  padding: 18px;
+  border-radius: 14px;
+  background: rgba(94,203,255,0.08);
+  border: 1px solid rgba(94,203,255,0.25);
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9fb3d9;
+}
+
+/* ===== SECURITY ===== */
+.security-box {
+  margin-top: 60px;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+
+  background: rgba(124,108,255,0.06);
+  border: 1px solid rgba(124,108,255,0.25);
+}
+
+.security-box h4 {
+  margin-bottom: 12px;
+  color: #7c6cff;
+}
+
+.security-box p {
+  color: #c7d2fe;
+  font-size: 0.95rem;
   line-height: 1.7;
 }
 
-/* ===== BACK BUTTON ===== */
+/* ===== FOOTER BUTTON ===== */
+.install-footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
 .back-btn {
-  margin-top: 34px;
-  width: 100%;
-  padding: 14px;
-
+  padding: 14px 30px;
   border-radius: 999px;
-  border: 1px solid #1e3a8a;
-
+  border: 1px solid rgba(255,255,255,0.15);
   background: transparent;
   color: #c7d2fe;
-
   cursor: pointer;
-  transition: 0.25s;
+  transition: 0.3s ease;
 }
 
 .back-btn:hover {
-  background: rgba(96,165,250,0.12);
-  border-color: #60a5fa;
+  background: rgba(94,203,255,0.1);
+  border-color: #5ecbff;
   color: #ffffff;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 480px) {
-  .install-card {
-    padding: 36px 24px;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .install-container {
+    padding: 40px 24px;
   }
 
-  .install-card h1 {
+  .steps-card,
+  .usage-card {
+    padding: 30px 20px;
+  }
+
+  .install-header h1 {
     font-size: 2rem;
   }
 }

@@ -2,158 +2,193 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 export default function Home() {
-    return (
-        <div className="home">
+  return (
+    <div className="home">
 
-            {/* HERO SECTION */}
-            <section className="hero">
-                <h1>🛡️ ToxiGuard AI</h1>
+      {/* ================= HERO ================= */}
+      <section className="hero">
+        <div className="hero-badge">AI Moderation for Instagram</div>
 
-                <p>
-                    Protect your social media presence with AI-powered moderation.
-                    Automatically detect, filter, and remove toxic, abusive, or spam
-                    comments from your Instagram posts in real time.
-                </p>
+        <h1>🛡️ ToxiGuard AI</h1>
 
-                {/* ⭐ PRIMARY ACTIONS */}
-                <div className="cta">
+        <h3>
+          Stop Toxic Comments Before They Go Viral
+        </h3>
 
-                    {/* Secondary actions */}
-                    <Link to="/signup" className="btn primary">
-                        Get Started Free
-                    </Link>
+        <p className="hero-sub">
+          ToxiGuard AI automatically detects, filters, and removes abusive,
+          spam, and toxic comments in real time — protecting your brand,
+          community, and reputation 24/7.
+        </p>
 
-                    <Link to="/login" className="btn secondary">
-                        Login
-                    </Link>
+        <div className="cta">
+          <Link to="/signup" className="btn primary">
+            Start Free Trial
+          </Link>
 
-                    {/* Install first — main product action */}
-                    <Link to="/install" className="btn install">
-                        Install Extension
-                    </Link>
+          <Link to="/install" className="btn install">
+            Install Extension
+          </Link>
 
-
-                </div>
-
-                <p className="sub">
-                    Trusted by creators, brands, and communities worldwide
-                </p>
-            </section>
-
-            {/* FEATURES */}
-            <section className="features">
-                <h2>Why ToxiGuard AI?</h2>
-
-                <div className="grid">
-                    <div className="card">
-                        <h3>Real-time Detection</h3>
-                        <p>Identifies harmful comments instantly using advanced NLP models.</p>
-                    </div>
-
-                    <div className="card">
-                        <h3>Auto Removal</h3>
-                        <p>Deletes toxic comments before they harm your community.</p>
-                    </div>
-
-                    <div className="card">
-                        <h3>Instagram Integration</h3>
-                        <p>Works seamlessly with your existing workflow.</p>
-                    </div>
-
-                    <div className="card">
-                        <h3>Sentiment Analytics</h3>
-                        <p>Track audience mood and engagement trends over time.</p>
-                    </div>
-                </div>
-            </section>
-
-            {/* HOW IT WORKS */}
-            <section className="how">
-                <h2>How It Works</h2>
-
-                <ol>
-                    <li>Create your secure ToxiGuard account</li>
-                    <li>Install the browser extension</li>
-                    <li>Login to your moderation dashboard</li>
-                    <li>AI monitors comments automatically</li>
-                </ol>
-            </section>
-
-            {/* BENEFITS */}
-            <section className="benefits">
-                <h2>Who Is It For?</h2>
-
-                <div className="grid">
-                    <div className="card">
-                        <h3>Content Creators</h3>
-                        <p>Maintain a positive environment for your followers.</p>
-                    </div>
-
-                    <div className="card">
-                        <h3>Brands</h3>
-                        <p>Protect brand reputation and customer interactions.</p>
-                    </div>
-
-                    <div className="card">
-                        <h3>Communities</h3>
-                        <p>Encourage healthy conversations and reduce harassment.</p>
-                    </div>
-
-                    <div className="card">
-                        <h3>Moderators</h3>
-                        <p>Automate repetitive moderation tasks.</p>
-                    </div>
-                </div>
-            </section>
-
-            {/* STATS */}
-            <section className="stats">
-                <h2>Impact at a Glance</h2>
-
-                <div className="grid">
-                    <div className="card">
-                        <h3>97%</h3>
-                        <p>Toxic comments detected accurately</p>
-                    </div>
-
-                    <div className="card">
-                        <h3>24/7</h3>
-                        <p>Continuous automated protection</p>
-                    </div>
-
-                    <div className="card">
-                        <h3>0 Effort</h3>
-                        <p>No manual moderation required</p>
-                    </div>
-                </div>
-            </section>
-
-            {/* FINAL CTA */}
-            <section className="final-cta">
-                <h2>Start Protecting Your Community Today</h2>
-
-                <Link to="/install" className="btn primary large">
-                    Install Extension Now
-                </Link>
-            </section>
-
-            {/* FOOTER */}
-            <footer className="footer">
-                <p>© {new Date().getFullYear()} ToxiGuard AI. All rights reserved.</p>
-                <p>
-                    Crafted by{" "}
-                    <a
-                        href="https://wraithklu.vercel.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="author"
-                    >
-
-                        <span style={{ fontWeight: "bold", fontFamily: "italic", fontSize: "1.2rem", color: "#5ecbff" }}>@Wraaiiitthhh</span>
-                    </a>
-                </p>      
-            </footer>
-
+          <Link to="/login" className="btn secondary">
+            Login
+          </Link>
         </div>
-    );
+
+        <div className="social-proof">
+          Trusted by creators & fast-growing brands
+        </div>
+      </section>
+
+      {/* ================= METRICS ================= */}
+      <section className="metrics-strip">
+        <div className="metric">
+          <h3>97%</h3>
+          <p>Detection Accuracy</p>
+        </div>
+        <div className="metric">
+          <h3>&lt;10s</h3>
+          <p>Response Time</p>
+        </div>
+        <div className="metric">
+          <h3>24/7</h3>
+          <p>Continuous Protection</p>
+        </div>
+        <div className="metric">
+          <h3>0 Manual</h3>
+          <p>Moderation Needed</p>
+        </div>
+      </section>
+
+      {/* ================= FEATURES ================= */}
+      <section className="features">
+        <h2>Powerful Moderation Engine</h2>
+
+        <div className="grid">
+          <div className="card">
+            <h3>Hybrid AI Detection</h3>
+            <p>
+              Combines rule-based filtering, machine learning,
+              and LLM-based analysis for maximum precision.
+            </p>
+          </div>
+
+          <div className="card">
+            <h3>Real-Time Filtering</h3>
+            <p>
+              Comments are evaluated instantly as they appear —
+              no delay, no manual review.
+            </p>
+          </div>
+
+          <div className="card">
+            <h3>Sentiment Intelligence</h3>
+            <p>
+              Track audience mood trends and detect negativity spikes
+              before they escalate.
+            </p>
+          </div>
+
+          <div className="card">
+            <h3>Extension + Dashboard</h3>
+            <p>
+              Moderate directly from Instagram or use the analytics dashboard
+              for deeper insights.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= HOW IT WORKS ================= */}
+      <section className="how">
+        <h2>How It Works</h2>
+
+        <div className="grid steps">
+          <div className="step">
+            <span>1</span>
+            <p>Create your secure account</p>
+          </div>
+
+          <div className="step">
+            <span>2</span>
+            <p>Install the browser extension</p>
+          </div>
+
+          <div className="step">
+            <span>3</span>
+            <p>AI monitors & filters automatically</p>
+          </div>
+
+          <div className="step">
+            <span>4</span>
+            <p>Track insights from dashboard</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= USE CASES ================= */}
+      <section className="benefits">
+        <h2>Built For Modern Digital Teams</h2>
+
+        <div className="grid">
+          <div className="card">
+            <h3>Creators</h3>
+            <p>Protect your personal brand and community trust.</p>
+          </div>
+
+          <div className="card">
+            <h3>Brands</h3>
+            <p>Maintain professional engagement and reputation.</p>
+          </div>
+
+          <div className="card">
+            <h3>Agencies</h3>
+            <p>Manage multiple accounts with scalable moderation.</p>
+          </div>
+
+          <div className="card">
+            <h3>Communities</h3>
+            <p>Foster safe and respectful online spaces.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= SECURITY ================= */}
+      <section className="security">
+        <h2>Security & Privacy First</h2>
+        <p>
+          We do not store Instagram credentials. All authentication is token-based,
+          encrypted, and compliant with modern security standards.
+        </p>
+      </section>
+
+      {/* ================= FINAL CTA ================= */}
+      <section className="final-cta">
+        <h2>Ready to Protect Your Community?</h2>
+        <p>Start for free. Upgrade anytime.</p>
+
+        <Link to="/signup" className="btn primary large">
+          Get Started
+        </Link>
+      </section>
+
+      {/* ================= FOOTER ================= */}
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} ToxiGuard AI. All rights reserved.</p>
+
+        <p>
+          Built by{" "}
+          <a
+            href="https://wraithklu.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="author"
+          >
+            @Wraaiiitthhh
+          </a>
+        </p>
+      </footer>
+
+    </div>
+  );
 }
