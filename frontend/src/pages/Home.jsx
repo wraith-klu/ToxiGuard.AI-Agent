@@ -112,7 +112,7 @@ export default function Home() {
 
                 <div className="grid">
                     <div className="card">
-                        <h3>99%</h3>
+                        <h3>97%</h3>
                         <p>Toxic comments detected accurately</p>
                     </div>
 
