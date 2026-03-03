@@ -18,6 +18,8 @@ python-jose[cryptography]==3.3.0
 httpx==0.27.2
 
 
+psycopg2-binary
+
 
 
 

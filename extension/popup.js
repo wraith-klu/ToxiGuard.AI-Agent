@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:8090";
+const API = "https://toxiguard-ai-agent-1.onrender.com";
 
 // Wait until popup DOM is ready
 document.addEventListener("DOMContentLoaded", () => {

@@ -18,11 +18,6 @@ export default function Home() {
                 {/* ⭐ PRIMARY ACTIONS */}
                 <div className="cta">
 
-                    {/* Install first — main product action */}
-                    <Link to="/install" className="btn install">
-                        Install Extension
-                    </Link>
-
                     {/* Secondary actions */}
                     <Link to="/signup" className="btn primary">
                         Get Started Free
@@ -31,6 +26,12 @@ export default function Home() {
                     <Link to="/login" className="btn secondary">
                         Login
                     </Link>
+
+                    {/* Install first — main product action */}
+                    <Link to="/install" className="btn install">
+                        Install Extension
+                    </Link>
+
 
                 </div>
 

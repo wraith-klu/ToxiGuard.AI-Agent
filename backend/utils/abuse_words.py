@@ -7,7 +7,7 @@ abusive_words = {
     "fuck","fucking","fucked","fucker","motherfucker","mf",
     "shit","bullshit","crap","asshole","ass","bitch",
     "bastard","cunt","slut","whore","dick","dickhead",
-    "prick","pussy","scumbag",
+    "prick","pussy","scumbag", "cum","douche",
 
     # ---------- ENGLISH: OBFUSCATED ----------
     "f*ck","f**k","fuk","fuking","fuked","fuker",
