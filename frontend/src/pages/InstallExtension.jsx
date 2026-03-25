@@ -47,6 +47,19 @@ export default function InstallExtension() {
             </div>
 
             <div className="step">
+              <span>2</span>
+              <a
+                href="https://toxiguard-ai-agent-1.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "red" }}
+              >
+                Run the backend server
+              </a>
+              <p>Click the link above to start the backend server</p>
+            </div>
+
+            <div className="step">
               <span>3</span>
               <p>Open Chrome → <b>chrome://extensions</b></p>
             </div>
@@ -122,7 +135,7 @@ export default function InstallExtension() {
         </div>
 
 
-        
+
         {/* Security Section */}
         <div className="security-box">
           <h4>Security & Privacy</h4>
