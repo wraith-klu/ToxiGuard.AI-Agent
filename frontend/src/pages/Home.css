@@ -3,21 +3,21 @@
   --bg-main: #030b1f;
   --bg-deep: #020817;
   --bg-card: rgba(15, 30, 69, 0.65);
-  --border: rgba(255, 255, 255, 0.08);
+  --border: rgba(6, 156, 249, 0.08);
 
   --primary: #5ecbff;
   --primary-strong: #3aa8ff;
   --purple: #7c6cff;
 
-  --text-main: #eaf2ff;
-  --text-dim: #9fb3d9;
+  --text-main: #ffffff;
+  --text-dim: #fafafb;
 }
 
 /* ===== PAGE ===== */
 .home {
   background:
-    radial-gradient(circle at 20% 0%, rgba(62,170,255,0.15), transparent 40%),
-    radial-gradient(circle at 80% 20%, rgba(124,108,255,0.12), transparent 40%),
+    radial-gradient(circle at 20% 0%, rgba(62, 170, 255, 0.15), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(124, 108, 255, 0.12), transparent 40%),
     var(--bg-main);
 
   color: var(--text-main);
@@ -37,18 +37,19 @@
   display: inline-block;
   padding: 6px 16px;
   border-radius: 999px;
-  background: rgba(94,203,255,0.12);
-  border: 1px solid rgba(94,203,255,0.3);
-  font-size: 0.85rem;
+  background: rgba(94, 203, 255, 0.12);
+  border: 1px solid rgba(21, 176, 248, 0.975);
+  font-size: 1rem;
   margin-bottom: 20px;
   color: var(--primary);
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 5vw, 3.6rem);
-  font-weight: 800;
+  font-size: clamp(3rem, 5vw, 3.6rem);
+  font-weight: 900;
   margin-bottom: 20px;
   line-height: 1.2;
+
 }
 
 .hero-sub {
@@ -88,19 +89,19 @@
 .primary {
   background: linear-gradient(135deg, #6ad0ff, #3aa8ff);
   color: #02122e;
-  box-shadow: 0 8px 30px rgba(62,170,255,0.45);
+  box-shadow: 0 8px 30px rgba(62, 170, 255, 0.45);
 }
 
 .primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 40px rgba(62,170,255,0.65);
+  box-shadow: 0 14px 40px rgba(62, 170, 255, 0.65);
 }
 
 /* Secondary */
 .secondary {
   background: linear-gradient(135deg, #9c8cff, #7c6cff);
   color: white;
-  box-shadow: 0 8px 25px rgba(124,108,255,0.45);
+  box-shadow: 0 8px 25px rgba(124, 108, 255, 0.45);
 }
 
 .secondary:hover {
@@ -109,14 +110,14 @@
 
 /* Install */
 .install {
-  background: rgba(255,255,255,0.04);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border);
   color: var(--text-main);
 }
 
 .install:hover {
   border-color: var(--primary);
-  background: rgba(94,203,255,0.08);
+  background: rgba(1, 254, 22, 0.989);
 }
 
 /* Large */
@@ -134,11 +135,16 @@
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+  border-radius: 50px;
+  border: 2px solid rgba(16, 175, 243, 0.9);
+  box-shadow: 5px 15px 40px rgba(16, 175, 243, 0.947);
+
 }
 
 .metric h3 {
   font-size: 2rem;
   color: var(--primary);
+  
 }
 
 .metric p {
@@ -155,6 +161,7 @@
 .final-cta {
   padding: 100px 20px;
   text-align: center;
+  
 }
 
 .features h2,
@@ -173,7 +180,11 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 28px;
   max-width: 1100px;
-  margin: 50px auto 0;
+  margin: 100px auto 0;
+  border-radius: 25px;
+  border: 2px solid rgba(16, 175, 243, 0.9);
+  box-shadow: 5px 15px 40px rgba(16, 175, 243, 0.947);
+
 }
 
 /* Two column layout */
@@ -186,8 +197,8 @@
 .card {
   background: var(--bg-card);
   backdrop-filter: blur(14px);
-  padding: 30px 26px;
-  border-radius: 20px;
+  padding: 50px 30px;
+  border-radius: 100px;
   border: 1px solid var(--border);
   transition: all 0.25s ease;
 }
@@ -199,14 +210,14 @@
 
 .card p {
   color: var(--text-dim);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 .card:hover {
   transform: translateY(-8px);
   border-color: var(--primary);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+  box-shadow: 0 15px 45px rgba(30, 211, 243, 0.852);
 }
 
 /* ===== STEPS ===== */
@@ -214,8 +225,9 @@
   background: var(--bg-card);
   backdrop-filter: blur(14px);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 30px;
+  border-radius:30px;
+  padding: 50px;
+  padding-top: 50px;
   position: relative;
   text-align: center;
 }
@@ -242,8 +254,13 @@
 
 /* ===== FINAL CTA ===== */
 .final-cta {
+  padding: 80px 20px;
   background:
-    radial-gradient(circle at center, rgba(62,170,255,0.1), transparent 60%);
+    radial-gradient(circle at center, rgba(62, 170, 255, 0.1), transparent 60%);
+  border: 2px solid rgba(16, 175, 243, 0.9);
+  border-radius: 100px;
+  box-shadow: 15px 15px 40px rgba(16, 175, 243, 0.947);
+
 }
 
 .final-cta p {
@@ -257,5 +274,8 @@
   padding: 40px 20px;
   border-top: 1px solid var(--border);
   color: var(--text-dim);
-  font-size: 0.9rem;
+  font-size: 1rem;
+  border: 1px solid rgba(16, 175, 243, 0.9);
+  border-radius: 50px;
+  box-shadow: 15px 15px 40px rgba(16, 175, 243, 0.947);
 }
