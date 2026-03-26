@@ -47,7 +47,7 @@ export default function InstallExtension() {
             </div>
 
             <div className="step">
-              <span>2</span>
+              <span>3</span>
               <a
                 href="https://toxiguard-ai-agent-1.onrender.com/"
                 target="_blank"
@@ -60,22 +60,22 @@ export default function InstallExtension() {
             </div>
 
             <div className="step">
-              <span>3</span>
+              <span>4</span>
               <p>Open Chrome → <b>chrome://extensions</b></p>
             </div>
 
             <div className="step">
-              <span>4</span>
+              <span>5</span>
               <p>Enable <b>Developer Mode</b></p>
             </div>
 
             <div className="step">
-              <span>5</span>
+              <span>6</span>
               <p>Click <b>Load Unpacked</b></p>
             </div>
 
             <div className="step">
-              <span>6</span>
+              <span>7</span>
               <p>Select the extracted extension folder</p>
             </div>
           </div>

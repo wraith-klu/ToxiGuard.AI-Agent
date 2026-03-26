@@ -14,7 +14,7 @@
     radial-gradient(circle at 80% 20%, rgba(124,108,255,0.15), transparent 40%),
     linear-gradient(180deg, #06122e 0%, #030b1f 100%);
 
-  color: #eaf2ff;
+  color: #f9fafc;
   font-family: Inter, system-ui, -apple-system, sans-serif;
 }
 
@@ -26,12 +26,12 @@
 
   border-radius: 28px;
   backdrop-filter: blur(20px);
-  background: rgba(15, 25, 55, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(13, 14, 13, 0.6);
+  border: 2px solid rgba(16, 175, 243, 0.9);
 
   box-shadow:
     0 40px 120px rgba(0, 0, 0, 0.8),
-    0 0 60px rgba(94,203,255,0.15);
+    0 0 80px rgb(42, 187, 244);
 }
 
 /* ===== HEADER ===== */
@@ -41,11 +41,11 @@
 }
 
 .install-header h1 {
-  font-size: clamp(2.4rem, 4vw, 3rem);
+  font-size: clamp(3rem, 4vw, 3rem);
   font-weight: 800;
   margin-bottom: 16px;
 
-  background: linear-gradient(90deg, #ffffff, #5ecbff);
+  background: linear-gradient(100deg, #f12727, #5ecbff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -54,8 +54,8 @@
 .subtitle {
   max-width: 650px;
   margin: 0 auto;
-  color: #9fb3d9;
-  font-size: 1.05rem;
+  color: #fdfeff;
+  font-size: 1.25rem;
   line-height: 1.7;
 }
 
@@ -70,12 +70,12 @@
   padding: 16px 36px;
   border-radius: 999px;
 
-  background: linear-gradient(135deg, #6ad0ff, #3aa8ff);
-  color: #02122e;
+  background: linear-gradient(135deg, #6ad0ff, #db3aff);
+  color: #00040c;
   font-weight: 700;
   text-decoration: none;
 
-  box-shadow: 0 18px 50px rgba(62,170,255,0.5);
+  box-shadow: 10px 18px 50px rgba(20, 148, 245, 0.943);
   transition: all 0.3s ease;
 }
 
@@ -86,8 +86,8 @@
 
 .secure-note {
   margin-top: 14px;
-  font-size: 0.9rem;
-  color: #9fb3d9;
+  font-size: 1rem;
+  color: #f6f7f9;
 }
 
 /* ===== STEPS CARD ===== */
@@ -96,8 +96,8 @@
   margin-top: 50px;
   padding: 40px 30px;
   border-radius: 22px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: rgb(12, 0, 15);
+  border: 2px solid rgb(17, 101, 245);
 }
 
 .steps-card h3,
@@ -105,7 +105,7 @@
   margin-bottom: 30px;
   font-size: 1.6rem;
   text-align: center;
-  color: #5ecbff;
+  color: #06a8f3;
 }
 
 /* ===== GRID ===== */
@@ -120,14 +120,14 @@
   background: rgba(15, 25, 55, 0.6);
   border-radius: 18px;
   padding: 28px 22px;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 2px solid rgba(26, 129, 240, 0.97);
   transition: all 0.3s ease;
 }
 
 .step:hover {
   transform: translateY(-6px);
-  border-color: rgba(94,203,255,0.4);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+  border-color: rgba(52, 225, 244, 0.943);
+  box-shadow: 0 20px 45px rgba(18, 162, 245, 0.954);
 }
 
 .step span {
@@ -147,9 +147,9 @@
 }
 
 .step p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
-  color: #c7d2fe;
+  color: #f9fafc;
 }
 
 /* ===== USAGE NOTE ===== */
@@ -172,17 +172,18 @@
   text-align: center;
 
   background: rgba(124,108,255,0.06);
-  border: 1px solid rgba(124,108,255,0.25);
+  border: 2px solid rgba(125, 108, 255, 0.977);
 }
 
 .security-box h4 {
   margin-bottom: 12px;
   color: #7c6cff;
+  font-size: 2rem;
 }
 
 .security-box p {
-  color: #c7d2fe;
-  font-size: 0.95rem;
+  color: #f7f7fa;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
@@ -197,7 +198,7 @@
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.15);
   background: transparent;
-  color: #c7d2fe;
+  color: #5ef68b;
   cursor: pointer;
   transition: 0.3s ease;
 }
