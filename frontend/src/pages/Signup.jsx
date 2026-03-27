@@ -1,19 +1,19 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./Signup.css";
+import { useNavigate, Link } from "react-router-dom";
+import "./Login.css"; // ✅ reuse same CSS as login
 
 const API =
   import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8090";
 
 export default function Signup() {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
-  const handleSignup = async () => {
+  const handleSignup = async (e) => {
+    e.preventDefault();
 
     if (!email || !password) {
       alert("Enter email and password");
@@ -31,7 +31,10 @@ export default function Signup() {
         body: JSON.stringify({ email, password })
       });
 
-      const data = await res.json();
+      let data = {};
+      try {
+        data = await res.json();
+      } catch { }
 
       if (res.ok) {
         alert("Account created successfully");
@@ -50,25 +53,54 @@ export default function Signup() {
 
   return (
     <div className="auth-page">
+      <div className="auth-container">
 
-      <h2>Create Account</h2>
+        {/* LEFT SIDE */}
+        <div className="auth-card">
+          <h2>Create Account</h2>
 
-      <input
-        type="email"
-        placeholder="Email"
-        onChange={(e) => setEmail(e.target.value)}
-      />
+          <form onSubmit={handleSignup} className="auth-form">
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
-      <input
-        type="password"
-        placeholder="Password"
-        onChange={(e) => setPassword(e.target.value)}
-      />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
-      <button onClick={handleSignup} disabled={loading}>
-        {loading ? "Creating..." : "Sign Up"}
-      </button>
+            <button type="submit" disabled={loading}>
+              {loading ? "Creating..." : "Sign Up"}
+            </button>
+          </form>
 
+          <p className="auth-alt">
+            Already have an account?{" "}
+            <Link to="/login" className="auth-link">
+              Login
+            </Link>
+          </p>
+
+          <button
+            className="back-home-btn"
+            onClick={() => navigate("/")}
+          >
+            ← Back to Home
+          </button>
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="auth-right">
+          <img src="/sky.jpg" alt="AI" />
+          <div className="auth-overlay">ToxiGuard.AI</div>
+        </div>
+
+      </div>
     </div>
   );
 }

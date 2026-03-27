@@ -53,44 +53,53 @@ export default function Login() {
 
   return (
     <div className="auth-page">
-      <div className="auth-card">
-        <h2>Login</h2>
+      <div className="auth-container">
 
-        <form onSubmit={handleLogin} className="auth-form">
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+        {/* LEFT */}
+        <div className="auth-card">
+          <h2>Login</h2>
 
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+          <form onSubmit={handleLogin} className="auth-form">
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
-          <button type="submit" disabled={loading}>
-            {loading ? "Logging in..." : "Login"}
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+
+            <button type="submit" disabled={loading}>
+              {loading ? "Logging in..." : "Login"}
+            </button>
+          </form>
+
+          <p className="auth-alt">
+            Don’t have an account?{" "}
+            <Link to="/signup" className="auth-link">
+              Sign Up
+            </Link>
+          </p>
+
+          <button
+            className="back-home-btn"
+            onClick={() => navigate("/")}
+          >
+            ← Back to Home
           </button>
-        </form>
+        </div>
 
-        {/* Sign Up Link */}
-        <p className="auth-alt">
-          Don’t have an account?{" "}
-          <Link to="/signup" className="auth-link">
-            Sign Up
-          </Link>
-        </p>
+        {/* RIGHT */}
+        <div className="auth-right">
+          <img src="/sky.jpg" alt="Image" />
+          <div className="auth-overlay text-5xl font-semibold text-white">ToxiGuard.AI</div>
+        </div>
 
-        {/* Back to Home */}
-        <button
-          className="back-home-btn"
-          onClick={() => navigate("/")}
-        >
-          ← Back to Home
-        </button>
       </div>
     </div>
   );
