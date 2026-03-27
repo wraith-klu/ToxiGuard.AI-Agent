@@ -97,7 +97,7 @@ export default function Signup() {
 
         {/* RIGHT SIDE */}
         <div className="auth-right">
-          <img src="/toxi9.jpg" alt="AI" />
+          <img src="/toxi2.jpg" alt="AI" />
         </div>
 
       </div>
