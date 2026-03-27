@@ -144,6 +144,7 @@
 
   /* 🔥 Gradient text (modern SaaS look) */
   background-image: linear-gradient(135deg, #60a5fa, #09eb3a, #760ef4);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -232,7 +233,7 @@
   .auth-right {
     order: 1;
     /* ⬅️ move to top */
-    height: 220px;
+    height: 400px;
   }
 
   /* 🔥 LOGIN BELOW */
@@ -249,4 +250,18 @@
   .auth-card h2 {
     font-size: 2rem;
   }
+}
+
+.auth-brand {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+
+  background: linear-gradient(100deg, #05a417, #da077b, #2ec3e8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 12px rgba(96, 165, 250, 0.5);
 }

@@ -57,6 +57,8 @@ export default function Login() {
 
         {/* LEFT */}
         <div className="auth-card">
+          <div className="auth-brand">ToxiGuard.AI</div>
+
           <h2>Login</h2>
 
           <form onSubmit={handleLogin} className="auth-form">
@@ -96,8 +98,7 @@ export default function Login() {
 
         {/* RIGHT */}
         <div className="auth-right">
-          <img src="/sky.jpg" alt="Image" />
-          <div className="auth-overlay text-5xl font-semibold text-white">ToxiGuard.AI</div>
+          <img src="/toxi4.jpg" alt="Image" />
         </div>
 
       </div>

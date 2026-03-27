@@ -57,6 +57,7 @@ export default function Signup() {
 
         {/* LEFT SIDE */}
         <div className="auth-card">
+          <div className="auth-brand">ToxiGuard.AI</div>
           <h2>Create Account</h2>
 
           <form onSubmit={handleSignup} className="auth-form">
@@ -96,8 +97,7 @@ export default function Signup() {
 
         {/* RIGHT SIDE */}
         <div className="auth-right">
-          <img src="/sky.jpg" alt="AI" />
-          <div className="auth-overlay">ToxiGuard.AI</div>
+          <img src="/toxi9.jpg" alt="AI" />
         </div>
 
       </div>
