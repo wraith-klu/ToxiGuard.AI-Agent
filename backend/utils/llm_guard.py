@@ -18,7 +18,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 OPENROUTER_MODEL = os.getenv(
     "OPENROUTER_MODEL",
-    "arcee-ai/trinity-large-preview:free"
+    "meta-llama/llama-3.3-70b-instruct:free"
 )
 
 if not OPENROUTER_API_KEY:
